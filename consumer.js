@@ -6,8 +6,6 @@ const {
 
 const consumerOptiomns = {
 	groupId: environment.CLIENT_ID,
-	// minBytes: 5,
-	// maxBytes: 1e6,
 };
 
 const kafka = new Kafka(kafkaOptions);

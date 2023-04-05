@@ -13,7 +13,6 @@ const produce = async () => {
 
 	await producer.send({
 		topic: environment.TOPIC,
-		acks: 1, 	// can be set to -1, 0, or 1
 		messages: [
 			{
 				key: String(i),
