@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "kafkajs": "^2.2.4"
+  },
+  "name": "example-kafka-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "produce": "node producer.js",
+    "consume": "node consumer.js"
+  },
+  "author": "Marco Pestrin",
+  "license": "ISC",
+  "description": "Kafka boilerplate for nodeJs"
+}
