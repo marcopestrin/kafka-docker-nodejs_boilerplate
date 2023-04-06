@@ -1,13 +1,15 @@
 {
   "dependencies": {
-    "kafkajs": "^2.2.4"
+    "kafkajs": "^2.2.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.3"
   },
   "name": "example-kafka-node",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "produce": "node producer.js",
-    "consume": "node consumer.js"
+    "start": "node --loader ts-node/esm index.ts",
+    "runConsumer": "node --loader ts-node/esm consumer.ts"
   },
   "author": "Marco Pestrin",
   "license": "ISC",

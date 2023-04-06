@@ -1,10 +1,11 @@
 ### Kafka Boilerplate
 
 ##### Technologies
+
 1. Kafka
 2. Nodejs
-3. Docker
-
+3. Typescript
+4. Docker
 
 #### How to install and set the environment
 
@@ -12,13 +13,14 @@
 docker-compose -f docker-compose.yml up -d
 ```
 
-Just replace `kafka` with the value of `container_name`, if you’ve decided to name it differently in the `docker-compose.yml` file.
 
+Then:
 ```bash
 docker exec -it kafka /bin/sh
 ```
+Just replace `kafka` with the value of `container_name`, if you’ve decided to name it differently in the `docker-compose.yml` file.
 
-create a topic with this command:
+Create a topic with this command:
 
 ```bash
 kafka-topics.sh --create --zookeeper zookeeper:2181 --replication-factor 1 --partitions 1 --topic my_topic
