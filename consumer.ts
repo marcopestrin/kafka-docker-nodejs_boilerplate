@@ -17,7 +17,8 @@ export default async function consumeMessage(topic: string) {
 
 	await consumer.run({
 		eachMessage: async ({ message }: EachMessagePayload) => {
-			console.log(`Received message: ${message?.value?.toString()}`);
+			const payload = message.value?.toString() || "";
+			console.log(JSON.parse(payload));
 		},
 	});
 };

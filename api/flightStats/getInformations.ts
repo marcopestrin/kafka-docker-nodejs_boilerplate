@@ -82,5 +82,5 @@ function sendData(x: GetArrivingFlights) {
   sendMessage(environment.TOPIC, JSON.stringify(x.response));
 }
 getArrivingFlights({
-  airportCode: 'DXB'
+  airportCode: 'LAX'
 }).then(sendData);
