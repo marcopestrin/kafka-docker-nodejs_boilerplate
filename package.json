@@ -5,8 +5,7 @@
     "kafka": "^0.2.3",
     "kafkajs": "^2.2.4",
     "ts-node": "^10.9.1",
-    "typescript": "^5.0.3",
-    "xml-js": "^1.6.11"
+    "typescript": "^5.0.3"
   },
   "name": "example-kafka-node",
   "version": "1.0.0",
@@ -14,8 +13,8 @@
   "scripts": {
     "debug": "",
     "start": "node --loader ts-node/esm index.ts",
-    "runProducer": "node --loader ts-node/esm api/flightStats/getInformations.ts",
-    "runConsumer": "node --loader ts-node/esm consumer.ts"
+    "produce": "node --loader ts-node/esm api/flightStats/getInformations.ts",
+    "consume": "node --loader ts-node/esm consumer.ts"
   },
   "author": "Marco Pestrin",
   "license": "ISC",
